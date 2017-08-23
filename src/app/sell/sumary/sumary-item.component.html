@@ -1,0 +1,7 @@
+<div class="container">
+  <span class="line-title">{{line.title}}</span>
+  <div *ngFor="let detail of line.subCategories" class="details">
+    <span class="detail-title">{{detail.title}}</span>
+    <span *ngIf="detail.price>0" class="detail-price">₡{{detail.price|number:'1.2-2'}}</span>
+  </div>
+</div>

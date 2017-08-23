@@ -1,0 +1,16 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  .line-title{
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+  }
+  .details{
+    display: flex;
+    font-family: Montserrat-Regular;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted #188ABB;
+  }
+}

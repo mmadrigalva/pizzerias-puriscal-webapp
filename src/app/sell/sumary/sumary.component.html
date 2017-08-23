@@ -1,0 +1,4 @@
+<div *ngIf="sellService.getOrder().lines.length>0" class="container">
+  <sumary-item *ngFor="let line of sellService.getOrder().lines" [line]="line"></sumary-item>
+  {{sellService.getOrder().total()}}
+</div>

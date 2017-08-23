@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+html, body{
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color:#eaeff3
+}
+div{
+  box-sizing: border-box;
+}
+.home-card-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555555;
+  color: #FFF;
+  border-radius: 15px;
+  width: 15vw;
+  min-width: 170px;
+  height: 20vh;
+  .title{
+    font-size:  30px;
+    font-family: Montserrat-Bold;
+  }
+  &.disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  &:not(.disabled):hover{
+    border:3px solid#73FEC2;
+    color: #73FEC2;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,21 @@
+<div class="sell-index-container">
+  <div class="tabs-container">
+    <div class="tabs-titles">
+      <tab-title *ngFor="let tab of tabs" (onClick)="selectTab(tab)" [title]="tab.title" [style]="optionStyle.Title" [id]="tab.id"></tab-title>
+    </div>
+    <div *ngIf="drawingCategories" class="tabs-content">
+      <tab-title *ngFor="let category of categories" (onClick)="selectCategory(category)" [title]="category.title" [style]="optionStyle.Item">
+      </tab-title>
+    </div>
+    <div *ngIf="!drawingCategories" class="tabs-content">
+      <tab-title *ngFor="let subCategory of getContentForSubCategory()" (onClick)="selectSubCategory(subCategory)" [title]="subCategory.title"
+        [style]="optionStyle.Item"></tab-title>
+    </div>
+  </div>
+  <div class="sumary">
+    <sumary></sumary>
+    <div class="back-button" (click)="goToHome()">
+      <span class="text">Back</span>
+    </div>
+  </div>
+</div>
