@@ -80,9 +80,10 @@ export class CategoryService {
       ),
       new Category('Casados',
         [
-          new SubCategory(23, 'Con carne', 2500, new SubCategoryTag(4, 1, 'Almuerzos')),
+          new SubCategory(23, 'Con res', 2500, new SubCategoryTag(4, 1, 'Almuerzos')),
           new SubCategory(24, 'Con pescado', 2500, new SubCategoryTag(4, 1, 'Almuerzos')),
           new SubCategory(25, 'Con pollo', 2500, new SubCategoryTag(4, 1, 'Almuerzos')),
+          new SubCategory(25, 'Con cerdo', 2500, new SubCategoryTag(4, 1, 'Almuerzos'))
         ]
       )
     ]
