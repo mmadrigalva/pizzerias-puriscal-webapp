@@ -6,6 +6,7 @@ html, body{
   width: 100%;
 }
 body{
+  background-image: url('assets/Images/background.jpg');
   background-color:#eaeff3
 }
 div{
@@ -34,4 +35,8 @@ div{
     color: #73FEC2;
     cursor: pointer;
   }
+
+}
+.button-shadow{
+  box-shadow: 10px 10px 5px #888888;
 }
